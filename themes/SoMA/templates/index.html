@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}        
+		{% for article in articles_page.object_list %}        
+			{# First item #}
+		<section class="article" itemscope itemType="http://schema.org/BlogPosting">
+			<meta itemprop="inLanguage" content="de-DE"/>
+			<div class="body">
+				<article>
+					<h1 class="entry-title" itemprop="headline"><a itemprop="url" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+					{% include 'article_infos.html' %}
+					<div itemprop="articleBody">
+						{{ article.content }}
+					</div>
+					{% if article.gallery %}
+					<section id="gallery-{{ article.album }}">
+					    <h2>Bildergalerie: &bdquo;{{ article.album }}&rdquo;</h2>
+					    <ul class="gallery">
+						{% for image in article.galleryimages %}
+						<li><a class="{{ article.album }} cboxElement" href="{{ SITEURL }}/images/gallery/{{ article.album }}/{{ image }}"><img src="{{ SITEURL }}/images/gallery_thumbs/{{ article.album }}/{{ image }}" class="gallery_image" alt="{{ article.album }}-{ image }}"></a></li>
+						{% endfor %}
+					    </ul>
+					</section>
+					{% endif %}
+					{% if article.share_post and article.status != 'draft' %}
+					<section style="clear:both">
+					    <p class="post-share-links">
+					        Diesen Eintrag auf <a href="{{article.share_post['twitter']}}" target="_blank" title="auf Twitter empfehlen">Twitter</a> oder via <a href="{{article.share_post['email']}}" target="_blank" title="via Email empfehlen">Email</a> empfehlen und <a href="{{article.share_post['flattr']}}" target="_blank" title="Flattrn!">Flattrn</a>, Danke!
+					    </p>
+					</section>
+					{% endif %}
+				</article>
+					{% if loop.last and (articles_page.has_previous() or not articles_page.has_previous() and loop.length > 1) %} 
+						{% include 'pagination.html' %}
+					{% endif %}
+			</div>
+		</section>
+
+		{% endfor %}
+{% endblock content %}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemType="http://schema.org/Blog">
+	<head>
+		<title itemprop="headline name">{% block title %}{{ SITENAME }}{%endblock%}</title>
+		<meta itemprop="isFamilyFriendly" content="True"/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="{{ SITEURL }}/favicon.png"/>
+		{% if FEED_ALL_ATOM %}
+		<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+		{% endif %}
+		{% if FEED_ALL_RSS %}
+		<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+		{% endif %}
+		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+		<!--[if IE]><script src="{{ SITEURL }}/theme/js/html5.js"></script><![endif]-->
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" type="text/css" media="all" href="{{ SITEURL }}/css/ie.css"/>
+			<script src="{{ SITEURL }}/js/IE8.js" type="text/javascript"></script><![endif]-->
+		<!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="{{ SITEURL }}/css/ie6.css"/><![endif]-->
+		<script src="{{ SITEURL }}/theme/js/jquery-2.1.0.min.js" type="text/javascript"></script>
+		<script src="{{ SITEURL }}/theme/js/jquery.colorbox-min.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function(){
+				$(".cboxElement").colorbox({rel:'gallery', transition:"fade", width:"90%"});
+			});
+		</script>
+	</head>
+	<body id="index" class="home">
+		<div class="detail">
+			<p class="vcard">
+				<a itemprop="url" class="url"  href="{{ SITEURL }}/">{% if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}
+				<img itemprop="image" class="photo" src="{{ SITEURL }}/theme/images/tim-kraemer.png" width="97" height="98" alt="Tim Krämer"><br/>
+				<span itemprop="text description">Ich bin <span itemprop="author creator editor accountablePerson" itemscope itemtype="http://schema.org/Person"><strong itemprop="name" class="fn n"><span class="given-name">Tim</span> <span class="family-name">Krämer</span></strong></span><br/>und das ist mein Weblog.</span></a>
+			</p>
+			<ul id="navi">
+			{% for page in PAGES %}
+				<li><a href="{{ SITEURL }}/{{ page.url }}">⇨ {{ page.title }}</a></li>
+			{% endfor %}
+			</ul>
+		</div>
+		{% block content %}
+		{% endblock %}	
+		<footer id="contentinfo" >
+			<p id="about" class="vcard ">
+				Proudly powered by <a href="http://getpelican.com/" target="_blank">Pelican</a> and <a href="http://python.org" target="_blank">Python</a>.<br/>
+				Hintergrundbild von <a href="http://en.wikipedia.org/wiki/User:Spinnick597">Spinnick597</a> <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a>.
+			</p>
+			<div style="display:none"><a href="https://plus.google.com/105406692262409087696?rel=author">Google</a></div>
+		</footer>
+	</body>
+</html>

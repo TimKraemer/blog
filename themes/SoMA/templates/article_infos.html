@@ -1,0 +1,12 @@
+					<div class="post-info">
+						<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+							<meta itemprop="name" content="{{ article.author }}"/>
+						</span>
+						<ul>
+							<li class="published" title="{{ article.date.isoformat() }}" itemprop="datePublished" content="{{ article.date.isoformat() }}">
+								geschrieben am&nbsp;{{ article.locale_date }}, Tags: <span itemprop="keywords">{% include 'taglist.html' %}</span>
+							</li>
+						</ul>
+						{% import 'translations.html' as translations with context %}
+						{{ translations.translations_for(article) }}
+					</div>
