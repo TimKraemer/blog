@@ -17,7 +17,7 @@
 					    <h2>Bildergalerie: &bdquo;{{ article.album }}&rdquo;</h2>
 					    <ul class="gallery">
 						{% for image in article.galleryimages %}
-						<li><a class="{{ article.album }} cboxElement" href="{{ SITEURL }}/images/gallery/{{ article.album }}/{{ image }}"><img src="{{ SITEURL }}/images/gallery_thumbs/{{ article.album }}/{{ image }}" class="gallery_image" alt="{{ article.album }}-{ image }}"></a></li>
+						<li><a class="{{ article.album }} cboxElement" href="{{ SITEURL }}/images/gallery/{{ article.album }}/{{ image }}"><img src="{{ SITEURL }}/images/gallery_thumbs/{{ article.album }}/{{ image }}" class="gallery_image" alt="{{ article.album }}-{{ image }}"></a></li>
 						{% endfor %}
 					    </ul>
 					</section>
