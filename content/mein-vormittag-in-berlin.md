@@ -4,6 +4,7 @@ Tags: personal
 Slug: mein-vormittag-in-berlin
 Category: public
 Summary: Visum, check!
+image: clayalle-170.jpg
 
 Es ist gar nicht mal so einfach, regelmäßig einen Text zu schreiben. Hätte ja keiner ahnen können... vor allem ich nicht, wo ich als guter Informatiker allenfalls noch blasse Erinnerungen habe, wie man einen Stift hält. In einen <dfn title="Das Blog [blɔg] (auch: der Blog) oder auch Weblog [ˈwɛb.lɔg], engl. [ˈwɛblɒg], Wortkreuzung aus engl. World Wide Web und Log für Logbuch, ist ein auf einer Website geführtes und damit – meist öffentlich – einsehbares Tagebuch oder Journal, in dem mindestens eine Person, der Web-Logger, kurz Blogger genannt, Aufzeichnungen führt, Sachverhalte protokolliert ('postet') oder Gedanken niederschreibt.">Blog</dfn> zu schreiben ist mir noch etwas befremdlich. Und dann noch über mich, statt wie gewohnt wissenschaftlich in Form eines Papers über ein klar definiertes Thema.
 

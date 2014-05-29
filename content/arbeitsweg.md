@@ -5,6 +5,8 @@ Slug: arbeitsweg
 Category: public
 Summary: Ich laufe nun zum Büro.
 gallery: Arbeitsweg
+image: charles-river.jpg
+SEOkeywords: Charles River, Laufschuhe, Arbeitsweg
 
 Nachdem ich mir am Wochenende bei [Boston Marathon Sports](https://www.marathonsports.com) schöne neue Laufschuhe gekauft habe, nutze ich diese neue Freiheit um zum Büro zu laufen, anstatt mich fahren zu lassen.
 

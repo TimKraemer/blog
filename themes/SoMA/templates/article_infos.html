@@ -4,7 +4,11 @@
 						</span>
 						<ul>
 							<li class="published" title="{{ article.date.isoformat() }}" itemprop="datePublished" content="{{ article.date.isoformat() }}">
+							{% if article.language == 'en_US' %}
+								written on&nbsp;{{ article.locale_date }}, tags: <span itemprop="keywords">{% include 'taglist.html' %}</span>
+							{% else %}
 								geschrieben am&nbsp;{{ article.locale_date }}, Tags: <span itemprop="keywords">{% include 'taglist.html' %}</span>
+							{% endif %}
 							</li>
 						</ul>
 						{% import 'translations.html' as translations with context %}

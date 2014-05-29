@@ -4,6 +4,7 @@ Tags: tech
 Slug: apache-redirect-exception
 Category: public
 Summary: How to define redirect exceptions in apache
+language: en_US
 
 Tonight I had to define an exception to my <dfn title="The Apache HTTP Server">Apache</dfn> redirect rules. Since the ["planet" rss-aggregator of my university](http://planet.mafiasi.de) doesn't support <abbr title="Secure Sockets Layer">SSL</abbr> connections to fetch its feeds, I made an exception so that my <abbr title="Really Simple Syndication">RSS</abbr> feed is also [available via <abbr title="Hypertext Transfer Protocol">HTTP</abbr>](http://tim-kraemer.de/uni.rss). However if you explicitly use the <abbr title="HyperText Transfer Protocol Secure">HTTPS</abbr> protocol it should be [available via <abbr title="Secure Sockets Layer">SSL</abbr>](https://tim-kraemer.de/uni.rss) too.
 

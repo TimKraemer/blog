@@ -4,12 +4,13 @@ from __future__ import unicode_literals
 from pilkit.processors import *
 
 AUTHOR = u'Tim Krämer'
-SITENAME = u'Tim in Boston'
+SITENAME = u'Tim Krämer - von Hamburg nach Boston'
+SITEDESCRIPTION = u'Weblog von Tim Krämer. Berichte und Photos aus Boston und Hamburg'
 SITEURL = ''
 RELATIVE_URLS = False
 TYPOGRIFY = True
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'de'
 
