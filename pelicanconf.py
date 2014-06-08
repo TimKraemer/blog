@@ -16,7 +16,7 @@ DEFAULT_LANG = u'de'
 
 THEME = 'themes/SoMA'
 PATH = 'content'
-PLUGINS=['plugins.share_post', 'plugins.gallery', 'plugins.thumbnailer']
+PLUGINS=['plugins.share_post', 'plugins.gallery', 'plugins.thumbnailer', 'pelican_youtube']
 
 RESIZE = [
     ('gallery', '_thumbs', [SmartResize(180, 180)]), # Path within images to resize, Thumbnail folder suffix (Empty to overwrite), pilkit settings

@@ -5,6 +5,7 @@ Slug: boston-downtown
 Category: public
 Summary: Feiern in Boston Downtown
 gallery: Boston-Downtown
+image: twinkies.jpg
 
 Ich war am Freitag Abend in der Innenstadt, [Boston Downtown](http://wikitravel.org/en/Boston/Downtown) und hab mir das ganze angeschaut und ein paar Bilder mit meiner [miesen Handykamera](http://www.motorola.de/MOTOROLA-RAZR-i/184583.html) gemacht. Die gibt es unter diesem Eintrag als [Galerie](https://tim-kraemer.de/blog/#gallery-Boston-Downtown) zu sehen. 
 

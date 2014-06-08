@@ -5,6 +5,7 @@ Slug: die-ersten-tage
 Category: public
 Summary: Die ersten Tage gingen schnell vorbei.
 gallery: die_ersten_Tage
+image: buero.jpg
 
 Ich bin jetzt ein paar Tage hier in [Boston](http://de.wikipedia.org/wiki/Boston), und hatte die Gelegenheit mich etwas umzuschauen. Was soll ich sagen... die spinnen, die <del>Römer</del> Amis. Es ist echt hart ordentliches Essen zu bekommen. Ich war in Supermärkten, die größer als unser Campus sind, aber eine so begrenzte Auswahl an frischen Lebensmitteln hatten, dass diese bereits Nachmittags nahezu ausverkauft waren. Und alles ist in einer zusätzlichen und unnötigen Schicht Plastik und/oder Papier verpackt.
 

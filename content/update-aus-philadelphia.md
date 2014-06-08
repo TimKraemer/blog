@@ -5,6 +5,7 @@ Slug: update-aus-philadelphia
 Category: public
 Summary: Update aus Philadelphia.
 gallery: Anreise
+image: fruehstueck.jpg
 
 Etwas spät reiche ich dann mal meinen Blogeintrag vom Sonntag nach...
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemType="http://schema.org/Blog">
 	<head>
-		<title itemprop="headline name">{% block title %}{{ SITENAME }}{% endblock %}</title>
+		<title itemprop="headline name">{% block title %}{% if article %}{{ article.title|striptags }}{% else %}{{ SITENAME }}{% endif %}{% endblock %}</title>
 		<meta itemprop="isFamilyFriendly" content="True"/>
 		<meta charset="utf-8"/>
 		<meta name="description" content="{% if article %}{{ article.content|striptags|truncate(70) }}{% else %}{{ SITEDESCRIPTION }}{% endif %}"/>
@@ -24,7 +24,17 @@
 		<meta name="twitter:title" content="{% if article %}{{ article.title|striptags }}{% else %}{{ SITENAME }}{% endif %}">
 		<meta name="twitter:description" content="{% if article %}{{ article.content|striptags|truncate(70) }}{% else %}{{ SITEDESCRIPTION }}{% endif %}">
 		{% if article %}
-			{% if article.gallery %}
+			{% if article.youtube %}
+		<meta name="twitter:card" content="player">
+		<meta name="twitter:player" content="https://www.youtube.com/embed/{{ article.youtube }}">
+		<meta name="twitter:player:width" content="1280">
+      	<meta name="twitter:player:height" content="720">
+      	<meta property="og:type" content="video">
+        <meta property="og:video" content="http://www.youtube.com/v/{{ article.youtube }}?version=3&amp;autohide=1">
+		<meta property="og:video:type" content="application/x-shockwave-flash">
+		<meta property="og:video:width" content="1280">
+		<meta property="og:video:height" content="720">		
+			{% elif article.gallery %}
 		<meta name="twitter:card" content="gallery">
 				{% for image in article.galleryimages %}
 					{% if loop.index0 < 4 %}

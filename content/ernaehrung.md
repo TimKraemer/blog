@@ -5,6 +5,7 @@ Slug: nahrung
 Category: public
 Summary: Heute geht es um Essen.
 gallery: 01-05-2014
+image: veggie.jpg
 
 Ich habe in letzter Zeit öfter über die Schwierigkeit gejammert, gesunde Lebensmittel zu finden. Ich war erfolgreich! Der [Star Market](http://www.shaws.com) gar nicht weit von meinem Büro hat eine gute Auswahl an Lebensmittel darunter auch frisches Gemüse, eine große Salatbar und diverse <del>gesunde</del> lecker-aussehende, frische Fertigmahlzeiten.
 
