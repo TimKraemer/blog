@@ -7,7 +7,6 @@
 		<meta name="description" content="{% if article %}{{ article.content|striptags|truncate(70) }}{% else %}{{ SITEDESCRIPTION }}{% endif %}"/>
 		<meta name="keywords" content="tim krämer, tim, krämer, kraemer, hamburg, boston, weblog, blog{% if article %}, {{ SEOkeywords}}{% endif %}"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<meta name="title" content="{% if article %}{{ article.title|striptags }}{% else %}{{ SITENAME }}{% endif %}"/>
 		<base href="{{ SITEURL }}"/>
 		<link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.png" type="image/x-icon"/>
 		<link rel="icon" href="{{ SITEURL }}/theme/images/favicon_32.png" sizes="32x32"/>
@@ -68,7 +67,7 @@
 		</script>
 	</head>
 	<body id="index" class="home">
-		<div class="detail">
+		<header class="detail">
 			<p class="vcard">
 				<a itemprop="url" class="url"  href="{{ SITEURL }}/">{% if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}
 				<img itemprop="image" class="photo" src="{{ SITEURL }}/theme/images/tim-kraemer.png" width="97" height="98" alt="Tim Krämer"><br/>
@@ -79,9 +78,8 @@
 				<li><a href="{{ SITEURL }}/{{ page.url }}">⇨ {{ page.title }}</a></li>
 			{% endfor %}
 			</ul>
-		</div>
-		{% block content %}
-		{% endblock %}	
+		</header>
+		{% block content %}{% endblock %}	
 		<footer id="contentinfo" >
 			<p id="about" class="vcard ">
 				Proudly powered by <a href="http://getpelican.com/" target="_blank">Pelican</a> and <a href="http://python.org" target="_blank">Python</a>.<br/>

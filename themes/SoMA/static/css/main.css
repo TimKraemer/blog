@@ -1,6 +1,6 @@
 body{background:#ccc url("../images/body-bg.jpg") no-repeat fixed;color:#000305;font-size:87.5%;font-family:'Trebuchet MS',Trebuchet,'Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;line-height:1.429;margin:0;padding:0;text-align:left}
 h1{font-size:2em}
-h2{font-size:1.714em;margin-bottom:.333em}
+h2{font-size:2em;margin-bottom:.333em}
 h3{font-size:1.429em}
 h4{font-size:1.286em}
 h5{font-size:1.143em}
@@ -23,7 +23,7 @@ ol{list-style:outside decimal;margin:1em 0 1.5em 1.5em}
 .pull-right{float:right}
 .detail{font-family:serif;font-size:1.5em;position:fixed;left:2%;top:150px;width:265px}
 .detail p{color:#ffffff;margin:0;text-align:center;font-size:.9em}
-.detail img{-webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222)}
+.detail img{-webkit-filter: drop-shadow(5px 5px 5px #222)}
 .detail a, .detail strong{color:#ffffff;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;text-shadow:1px 1px 2px #000}
 .post-info{width:100%;float:left;margin:0 0 10px 0;padding:5px 5px 20px 5px;color:#999;border-bottom:1px solid #eee}
 .post-info ul{width:100%;float:left;margin:0;list-style:none}
