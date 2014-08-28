@@ -54,6 +54,8 @@ docs/_build/
 
 # Pelican output
 output/
+cache/
 
+*.pid
 *~
 *fuse_*
