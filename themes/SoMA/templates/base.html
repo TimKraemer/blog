@@ -11,6 +11,7 @@
 		<link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.png" type="image/x-icon"/>
 		<link rel="icon" href="{{ SITEURL }}/theme/images/favicon_32.png" sizes="32x32"/>
 		<link rel="canonical" href="{{ SITEURL }}{% if article %}/{{ article.url }}{% endif %}"/>
+		<link rel="alternate" hreflang="de-de" href="{{ SITEURL }}">
 		<meta property="og:site_name" content="{{ SITENAME }}"/>
 		<meta property="og:url" content="{{ SITEURL }}{% if article %}/{{ article.url }}{% endif %}"/>
 		<meta property="og:title" content="{% if article %}{{ article.title|striptags }}{% else %}{{ SITENAME }}{% endif %}"/>
@@ -81,7 +82,7 @@
 			<p class="vcard">
 				<a itemprop="url" class="url"  href="{{ SITEURL }}/">{% if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}
 				<img itemprop="image" class="photo" src="{{ SITEURL }}/theme/images/tim-kraemer.png" width="97" height="98" alt="Tim Krämer"><br/>
-				<span itemprop="text description">Ich bin <span itemprop="author creator editor accountablePerson" itemscope itemtype="http://schema.org/Person"><strong itemprop="name" class="fn n"><span class="given-name">Tim</span> <span class="family-name">Krämer</span></strong></span><br/>und das ist mein Weblog.</span></a>
+				<span itemprop="text description">Ich bin <span itemprop="author creator editor accountablePerson" itemscope itemtype="http://data-vocabulary.org/Person"><strong itemprop="name" class="fn n"><span class="given-name">Tim</span> <span class="family-name">Krämer</span></strong>,<br/><span itemprop="role">Software Entwickler</span> aus <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Hamburg</span><meta itemprop="addressCountry" content="DE"></span></span><br/>und das ist mein Weblog.</span></a>
 			</p>
 			<ul id="navi">
 			{% for page in PAGES %}
@@ -91,11 +92,11 @@
 		</header>
 		{% block content %}{% endblock %}	
 		<footer id="contentinfo" >
-			<p id="about" class="vcard ">
+			<p id="about">
 				Proudly powered by <a href="http://getpelican.com/" target="_blank">Pelican</a> and <a href="http://python.org" target="_blank">Python</a>.<br/>
 				Hintergrundbild von <a href="http://en.wikipedia.org/wiki/User:Spinnick597">Spinnick597</a> <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a>.
 			</p>
-			<div style="display:none"><a href="https://plus.google.com/105406692262409087696?rel=author">Google</a></div>
+			<div style="display:none"><a href="https://plus.google.com/105406692262409087696?rel=author">Google</a> <a href="https://plus.google.com/105406692262409087696" rel="publisher">Plus</a></div>
 		</footer>
 	</body>
 </html>
